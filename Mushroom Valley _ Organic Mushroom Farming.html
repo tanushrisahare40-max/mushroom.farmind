@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/pranj/Downloads/preview%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mushroom Valley | Organic Mushroom Farming</title>
+
+<meta name="description" content="Premium organic mushroom farming website with fresh mushroom products, mushroom cultivation, gallery, FAQ, and contact form.">
+
+<meta name="keywords" content="mushroom farming, organic mushrooms, oyster mushroom, button mushroom, mushroom products, mushroom cultivation">
+
+<meta name="author" content="Tanushri Sahare">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+<link href="./Mushroom Valley _ Organic Mushroom Farming_files/css2" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fcf7;
+color:#222;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#1b5e20;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#2e7d32;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.55)),
+url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero-content{
+max-width:850px;
+animation:fadeUp 1s ease;
+}
+
+.hero h1{
+font-size:68px;
+font-weight:800;
+margin-bottom:20px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:35px;
+color:#f1f1f1;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+border-radius:10px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#43a047;
+color:white;
+}
+
+.btn-primary:hover{
+background:#2e7d32;
+transform:translateY(-4px);
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+margin-left:15px;
+}
+
+.btn-outline:hover{
+background:white;
+color:#1b5e20;
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+color:#1b5e20;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+font-size:17px;
+}
+
+/* ABOUT */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-img img{
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about-text h3{
+font-size:36px;
+margin-bottom:20px;
+color:#1b5e20;
+}
+
+.about-text p{
+line-height:1.9;
+margin-bottom:18px;
+color:#444;
+}
+
+/* PRODUCTS */
+
+.products{
+background:#edf7ee;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+height:250px;
+width:100%;
+object-fit:cover;
+}
+
+.product-content{
+padding:25px;
+}
+
+.product-content h3{
+font-size:26px;
+margin-bottom:12px;
+color:#1b5e20;
+}
+
+.product-content p{
+line-height:1.8;
+margin-bottom:20px;
+color:#555;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+height:260px;
+width:100%;
+object-fit:cover;
+border-radius:20px;
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* FAQ */
+
+.faq{
+background:#edf7ee;
+}
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:white;
+margin-bottom:20px;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.faq-item h3{
+margin-bottom:12px;
+color:#1b5e20;
+}
+
+.faq-item p{
+line-height:1.8;
+color:#555;
+}
+
+/* CONTACT */
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.contact-info h3{
+font-size:36px;
+margin-bottom:20px;
+color:#1b5e20;
+}
+
+.contact-info p{
+line-height:1.9;
+margin-bottom:15px;
+}
+
+.contact-form{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 8px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:none;
+background:#f2f7f1;
+border-radius:10px;
+font-size:15px;
+}
+
+.contact-form textarea{
+height:140px;
+resize:none;
+}
+
+/* CTA */
+
+.cta{
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+padding:100px 20px;
+text-align:center;
+color:white;
+}
+
+.cta h2{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:750px;
+margin:auto;
+line-height:1.9;
+margin-bottom:30px;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#102b12;
+color:white;
+padding-top:70px;
+position:relative;
+overflow:hidden;
+}
+
+.footer-top{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+padding-bottom:50px;
+}
+
+.footer-box h3{
+font-size:24px;
+margin-bottom:18px;
+}
+
+.footer-box p{
+line-height:1.9;
+color:#d5e3d5;
+}
+
+.footer-links a{
+display:block;
+margin-bottom:12px;
+color:#d5e3d5;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:white;
+padding-left:5px;
+}
+
+.copy{
+border-top:1px solid rgba(255,255,255,0.1);
+text-align:center;
+padding:20px;
+color:#d5e3d5;
+}
+
+/* FLOAT BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+width:65px;
+height:65px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:30px;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+z-index:999;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+.about-grid,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.cta h2{
+font-size:38px;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.hero{
+height:auto;
+padding-top:150px;
+padding-bottom:120px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section-title h2{
+font-size:32px;
+}
+
+.about-text h3,
+.contact-info h3{
+font-size:30px;
+}
+
+.btn-outline{
+margin-left:0;
+margin-top:15px;
+display:block;
+}
+
+.cta h2{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">🍄 Mushroom Valley</div>
+
+<div class="nav-links">
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#home">Home</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#about">About</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#products">Products</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#gallery">Gallery</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#faq">FAQ</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact">Contact</a>
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Fresh Organic Mushroom Farming</h1>
+
+<p>
+Premium quality organic mushrooms grown naturally with sustainable farming methods.
+Healthy, fresh and packed with nutrition directly from our mushroom farm.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#products" class="btn btn-primary">Explore Products</a>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-outline">Contact Us</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Us</h2>
+<p>Nature-inspired mushroom cultivation and premium organic products</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-img">
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1523741543316-beb7fc7023d8">
+</div>
+
+<div class="about-text">
+
+<h3>Professional Mushroom Farming Experts</h3>
+
+<p>
+We specialize in high-quality organic mushroom cultivation using modern and eco-friendly farming methods.
+</p>
+
+<p>
+Our mission is to provide fresh, healthy and naturally grown mushrooms while promoting sustainable agriculture and healthy living.
+</p>
+
+<p>
+From oyster mushrooms to button mushrooms, we ensure premium quality products with freshness and nutrition.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-primary">
+Get In Touch
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Mushroom Products</h2>
+<p>Fresh, organic and nutrient-rich mushroom varieties</p>
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1506806732259-39c2d0268443">
+
+<div class="product-content">
+
+<h3>Oyster Mushroom</h3>
+
+<p>
+Naturally grown oyster mushrooms with rich nutrition and premium freshness.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-primary">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1518977676601-b53f82aba655">
+
+<div class="product-content">
+
+<h3>Button Mushroom</h3>
+
+<p>
+Fresh white button mushrooms perfect for cooking, salads and healthy meals.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-primary">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1457530378978-8bac673b8062">
+
+<div class="product-content">
+
+<h3>Dried Mushroom Pack</h3>
+
+<p>
+Premium dried mushroom products with long shelf life and natural taste.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-primary">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Farm Gallery</h2>
+<p>Real mushroom farming and product visuals</p>
+</div>
+
+<div class="gallery-grid">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1501004318641-b39e6451bec6">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1512428559087-560fa5ceab42">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1502741338009-cac2772e18bc">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1528825871115-3581a5387919">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1464226184884-fa280b87c399">
+
+<img src="./Mushroom Valley _ Organic Mushroom Farming_files/photo-1518977676601-b53f82aba655">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+<p>Everything you need to know about mushroom farming</p>
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<h3>Which mushrooms do you grow?</h3>
+<p>
+We grow oyster mushrooms, button mushrooms and other premium organic varieties.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Are your mushrooms organic?</h3>
+<p>
+Yes, all mushrooms are cultivated using natural and eco-friendly farming methods.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide bulk orders?</h3>
+<p>
+Yes, we provide wholesale and bulk mushroom supply for businesses and restaurants.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I visit your mushroom farm?</h3>
+<p>
+Yes, farm visits can be scheduled through our contact section.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Start Your Healthy Mushroom Journey Today</h2>
+
+<p>
+Fresh organic mushrooms directly from our farm with premium quality and nutrition.
+Connect with us for orders, farming information and collaborations.
+</p>
+
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact" class="btn btn-primary">
+Contact Now
+</a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Get in touch with our mushroom farming experts</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h3>Let's Connect</h3>
+
+<p>
+📧 your-tanushrisahahare40@gmail.com
+</p>
+
+<p>
+📍 Organic Mushroom Farm, India
+</p>
+
+<p>
+📞 +91 98765 43210
+</p>
+
+<p>
+We reply quickly to product inquiries, collaborations and farming related questions.
+</p>
+
+</div>
+
+<div class="contact-form">
+
+<form action="https://formsubmit.co/your-tanushrisahahare40@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required="">
+
+<input type="email" name="email" placeholder="Your Email" required="">
+
+<input type="text" name="subject" placeholder="Subject">
+
+<textarea name="message" placeholder="Write your message..." required=""></textarea>
+
+<button type="submit" class="btn btn-primary">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-top">
+
+<div class="footer-box">
+
+<h3>🍄 Mushroom Valley</h3>
+
+<p>
+Premium organic mushroom farming brand focused on healthy living, sustainable agriculture and fresh mushroom products.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<div class="footer-links">
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#home">Home</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#about">About Us</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#products">Products</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#gallery">Gallery</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#contact">Contact</a>
+</div>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Contact Info</h3>
+
+<div class="footer-links">
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#">your-tanushrisahahare40@gmail.com</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#">Instagram</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#">YouTube</a>
+<a href="file:///C:/Users/pranj/Downloads/preview%20(1).html#">WhatsApp</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="copy">
+© 2026 Mushroom Valley • All Rights Reserved
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+
+<a href="https://wa.me/919999999999" class="whatsapp">
+💬
+</a>
+
+
+</body></html>
